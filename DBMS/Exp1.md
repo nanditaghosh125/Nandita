@@ -1,4 +1,4 @@
-# DBMS Practical 1 - Employee Master Table
+# DBMS Practical 1 
 
 ## Step 1 : Create EMPLOYEE Table
 ```sql

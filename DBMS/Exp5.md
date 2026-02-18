@@ -1,4 +1,4 @@
-# Practical File – Assignment Question 5
+# Experiment 5
 
 ## Step 1: Display the total number of employees working in the company
 ```sql

@@ -1,4 +1,4 @@
-# Experiment 3 – Employee Table Queries
+# Experiment 3 
 
 ## Step 1: List all employees and their jobs in Department 30 in descending order of salary
 ```sql

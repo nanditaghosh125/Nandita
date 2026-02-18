@@ -1,4 +1,4 @@
-# Experiment 2 – Employee Table Queries (Retrieving Data)
+# Experiment 2 
 
 ## Step 1: List all DISTINCT jobs in Employee
 ```sql
