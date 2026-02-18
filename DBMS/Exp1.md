@@ -1,7 +1,7 @@
 # DBMS Practical 1 - Employee Master Table
 
 ## Step 1 : Create EMPLOYEE Table
-~~~sql
+```sql
  CREATE TABLE EMPLOYEE(
     -> EMPNO INT(4) PRIMARY KEY,
     -> ENAME VARCHAR (20) NOT NULL,
@@ -12,27 +12,27 @@
     -> COMM INT (7),
     -> DEPTNO INT(2)
     -> );
-~~~
+```
 
 ## Step 2 : Create DEPARTMENT Table 
-~~~sql
+```sql
 CREATE TABLE DEPARTMENT(
     -> Deptno INT (2) PRIMARY KEY,
     -> Dname VARCHAR(15) NOT NULL
     -> );
-~~~
+```
 
 ## Step 3 : Insert values into DEPARTMENT
-~~~sql
+```sql
 INSERT INTO DEPARTMENT VALUES
 -> (10, 'RESEARCH'), 
 -> (20, 'ACCOUNTING'), 
 -> (30, 'SALES'), 
 -> (40, 'OPERATIONS');
-~~~
+```
 
 ## Step 4 : Insert values into EMPLOYEE
-~~~sql
+```sql
 INSERT INTO EMPLOYEE VALUES
     -> (7369, 'SMITH', 'CLERK', 7902, '1980-12-17',  800, NULL, 20),
     -> (7499, 'ALLEN', 'SALESMAN', 7698, '1981-02-20', 1600, 300, 30),
@@ -48,34 +48,34 @@ INSERT INTO EMPLOYEE VALUES
     -> (7900, 'JAMES', 'CLERK', 7698, '1981-12-03',  950, NULL, 30),
     -> (7902, 'FORD', 'ANALYST', 7566, '1981-12-03', 3000, NULL, 20),
     -> (7934, 'MILLER', 'CLERK', 7782, '1982-01-23', 1300, NULL, 10);
-~~~
+```
 
 ## Step 5 : Create Employee_Master table using Employee table
-~~~sql 
+```sql 
 CREATE TABLE Employee_Master AS
     -> SELECT * FROM Employee;
-~~~
+```
 
 ## Step 6 : Delete all records where DEPTNO=10
-~~~sql
+```sql
 DELETE FROM Employee_Master
     -> WHERE DeptNo = 10;
-~~~
+```
 
 ## Step 7 : Increase Salary by 10% for DEPTNO=20
-~~~sql
+```sql
 UPDATE Employee_Master 
     -> SET SAL = SAL + (SAL * 0.10)
     -> WHERE DEPTNO=20;
-~~~
+```
 
 ## Step 8 : Alter SAL column size to (10,2)
-~~~sql
+```sql
  ALTER TABLE Employee_Master
     -> MODIFY Sal DECIMAL(10,2);
-~~~
+```
 
 ## Step 9 : Drop Employee_Master Table
-~~~sql
+```sql
 DROP TABLE Employee_Master;
-~~~
+```
